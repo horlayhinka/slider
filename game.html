@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <title>Document</title>
+</head>
+
+<title>After round one</title>
+<body>
+    <h1>After Round Game</h1>
+    <p>Player X, please enter a number between 0 and 5;</p>
+    <p>Player Y, please enter a number between 0 and 5;</p>
+
+    
+    
+    <input type="number" id="PlayerXinput" min="0" max="5">
+    <input type="number" id="PlayerYinput" min="0" max="5">
+    <button onclick="playGame()">Generate Random Number</button>
+    <button onclick="endGame()">End Game</button>
+    <p id="result"></p>
+    <script>
+      function playGame(){
+         var playerXNumber=parseInt(document.getElementById("playerXInput").value);
+         var playerYNumber=parseInt(document.getElementById("playerYInput").value);\
+         if (playerXNumber<0||
+         playerXNumber>5||
+         playerYNumber<0||
+         playerYNumber>5){
+            alert("please enter numbers between 0 and 5.");
+         }
+         var randomNumber = Math.floor(Math.random()*6);
+         if(randomNumber===playerXNumber$$randomNumber===playerYNumber){
+            document.getElementById("result").textContent="its a tie!play again.";
+         }else if(randomNumber===playerXNumber){
+            document.getElementById("result").textContent="playerXWINS!"
+         }else if(randomNumber===)
+      
+      }
+        
+
+    </script>
+    
+</body>
+</html>
